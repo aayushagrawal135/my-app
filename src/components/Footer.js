@@ -4,14 +4,14 @@ function Footer() {
     return (
       <footer className="footer">
         <div className="footer__content">
+          <div className="footer__right">
+            <SocialIconsGroup />
+          </div>
           <div className="footer__left">
             <p>
               &copy; {new Date().getFullYear()} Your Blog Name. All rights
               reserved.
             </p>
-          </div>
-          <div className="footer__right">
-            <SocialIconsGroup />
           </div>
         </div>
       </footer>
@@ -21,7 +21,7 @@ function Footer() {
 function SocialIconsGroup() {
 
     const socials = {
-      LinkedIn: "https://www.linkedin.com/in/aayush-agrawal-8b8a7a108/",
+      LinkedIn: "https://www.linkedin.com/in/aayush-agrawal-8b8a7a108",
       Github: "https://github.com/aayushagrawal135",
     };
 
@@ -35,8 +35,8 @@ function SocialIconsGroup() {
 
     return (
       <div>
-        {socialIcon(socials["Linkedin"], <FaLinkedin />)}
-        {socialIcon(socials["Github"], <FaGithub />)}
+        {socialIcon(socials["LinkedIn"], <FaLinkedin size={28}/>)}
+        {socialIcon(socials["Github"], <FaGithub size={28}/>)}
       </div>
     );
 }
