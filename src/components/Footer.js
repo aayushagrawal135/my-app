@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import '../css/footer.css';
 
 function Footer() {
@@ -24,6 +24,7 @@ function SocialIconsGroup() {
     const socials = {
       LinkedIn: "https://www.linkedin.com/in/aayush-agrawal-8b8a7a108",
       Github: "https://github.com/aayushagrawal135",
+      Twitter: "https://twitter.com/feeler_21",
     };
 
     const socialIcon = (hyperlink, icon) => {
@@ -37,9 +38,10 @@ function SocialIconsGroup() {
     }
 
     return (
-      <div className='social-icons-group'>
-        {socialIcon(socials["LinkedIn"], <FaLinkedin size={28}/>)}
-        {socialIcon(socials["Github"], <FaGithub size={28}/>)}
+      <div className="social-icons-group">
+        {socialIcon(socials["LinkedIn"], <FaLinkedin size={28} />)}
+        {socialIcon(socials["Github"], <FaGithub size={28} />)}
+        {socialIcon(socials["Twitter"], <FaTwitter size={28} />)}
       </div>
     );
 }
