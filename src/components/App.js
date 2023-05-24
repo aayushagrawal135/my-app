@@ -1,9 +1,12 @@
 import '../css/App.css'
+import Footer from './Footer';
+import Profile from './Profile';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello!</h1>
+      <Profile />
+      <Footer />
     </div>
   );
 }
