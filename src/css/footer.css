@@ -1,0 +1,8 @@
+.social-icons-group {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon {
+    padding: 0.3em;
+}

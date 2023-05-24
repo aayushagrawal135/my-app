@@ -1,4 +1,5 @@
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import '../css/footer.css';
 
 function Footer() {
     return (
@@ -27,14 +28,16 @@ function SocialIconsGroup() {
 
     const socialIcon = (hyperlink, icon) => {
         return (
-          <a href={hyperlink} target="_blank" rel="noreferrer">
-            {icon}
-          </a>
+          <span className='social-icon'>
+            <a href={hyperlink} target="_blank" rel="noreferrer">
+              {icon}
+            </a>
+          </span>
         );
     }
 
     return (
-      <div>
+      <div className='social-icons-group'>
         {socialIcon(socials["LinkedIn"], <FaLinkedin size={28}/>)}
         {socialIcon(socials["Github"], <FaGithub size={28}/>)}
       </div>
